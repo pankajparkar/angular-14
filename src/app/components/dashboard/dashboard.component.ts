@@ -5,14 +5,21 @@ import { RouterModule } from '@angular/router';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 
+const componentImports = [
+  CommonModule,
+  RouterModule,
+];
+const matImports = [
+  MatCardModule,
+  MatButtonModule,
+];
+
 @Component({
   selector: 'app-dashboard',
   standalone: true,
   imports: [
-    CommonModule,
-    MatCardModule,
-    MatButtonModule,
-    RouterModule,
+    ...componentImports,
+    ...matImports,
   ],
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.scss']

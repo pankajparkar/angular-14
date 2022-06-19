@@ -8,6 +8,7 @@ import { InjectComponent } from './components/inject/inject.component';
 import { OptionalInjectorComponent } from './components/optional-injector/optional-injector.component';
 import { PageTitleStrategyComponent } from './components/page-title-strategy/page-title-strategy.component';
 import { ProtectedVariableComponent } from './components/protected-variable/protected-variable.component';
+import { StandaloneComponent } from './components/standalone/standalone.component';
 import { TypedFormsComponent } from './components/typed-forms/typed-forms.component';
 
 const routes: Routes = [
@@ -18,6 +19,10 @@ const routes: Routes = [
   {
     path: 'typed-forms',
     component: TypedFormsComponent,
+  },
+  {
+    path: 'standalone-component',
+    component: StandaloneComponent,
   },
   {
     path: 'inject',
