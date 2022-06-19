@@ -27,6 +27,17 @@
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
-    "strictTemplates": true
+    "strictTemplates": true,
+    // "extendedDiagnostics": {
+    //   // The categories to use for specific diagnostics.
+    //   "checks": {
+    //     // Maps check name to its category.
+    //     "invalidBananaInBox": "error",
+    //     "nullishCoalescingNotNullable": "error"
+    //   },
+    //   // The category to use for any diagnostics 
+    //   // not listed in 'checks' above.
+    //   "defaultCategory": "suppress"
+    // }
   }
 }
