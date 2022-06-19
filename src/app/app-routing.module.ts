@@ -1,8 +1,7 @@
-import { Injectable, NgModule, Type } from '@angular/core';
-import { Resolve, RouterModule, Routes, ActivatedRouteSnapshot } from '@angular/router';
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { CdkDemoComponent } from './components/cdk-demo/cdk-demo.component';
 
-import { BuiltInPrimitivesDialogComponent } from './components/built-in-primitives-dialog/built-in-primitives-dialog.component';
-import { BuiltInPrimitivesMenuComponent } from './components/built-in-primitives-menu/built-in-primitives-menu.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ExtendedDiagnosticsComponent } from './components/extended-diagnostics/extended-diagnostics.component';
 import { InjectComponent } from './components/inject/inject.component';
@@ -22,7 +21,7 @@ const routes: Routes = [
   {
     path: 'typed-forms',
     component: TypedFormsComponent,
-    title: DynamicTitleService
+    title: 'Typed Forms',
   },
   {
     path: 'standalone-component',
@@ -35,14 +34,9 @@ const routes: Routes = [
     title: 'Inject API',
   },
   {
-    path: 'built-in-primitivess-menu',
-    component: BuiltInPrimitivesMenuComponent,
+    path: 'cdk-demo',
+    component: CdkDemoComponent,
     title: 'Built In Primitives Menu',
-  },
-  {
-    path: 'built-in-primitivess-dialog',
-    component: BuiltInPrimitivesDialogComponent,
-    title: 'Built In Primitives Dialog',
   },
   {
     path: 'protected-variable',
