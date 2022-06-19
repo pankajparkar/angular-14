@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatButtonModule } from '@angular/material/button';
-import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-dashboard',
@@ -12,7 +11,6 @@ import { RouterModule } from '@angular/router';
     CommonModule,
     MatGridListModule,
     MatButtonModule,
-    RouterModule,
   ],
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.scss']
