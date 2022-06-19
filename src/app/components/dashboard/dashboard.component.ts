@@ -31,7 +31,7 @@ export class DashboardComponent {
     { name: 'Page Title Strategy', subTitle: 'Manage Page title using router and your own strategy', path: '/page-title-strategy' },
     { name: 'Protected Variable', subTitle: 'Now we can use prototected variables in Angular', path: '/protected-variable' },
     { name: 'Extended diagnostics', subTitle: 'Extend angular CLI diagnosting by making changes into angular.json', path: '/extended-diagnostics' },
-    { name: 'Optional Injector', subTitle: 'Now injector are optional for embedded views', path: '/optional-injectors' },
+    { name: 'Optional Injector', subTitle: 'Now injector are optional for embedded views', path: '/optional-injector' },
     { name: 'Built in Primitives Menu', subTitle: 'Built in primitives for menu', path: '/built-in-primitives-menu' },
     { name: 'Built in Primitives Dialog', subTitle: 'Built in primitives for dialog', path: '/built-in-primitives-dialog' },
     { name: 'Inject', subTitle: 'New inject API', path: '/inject' },
