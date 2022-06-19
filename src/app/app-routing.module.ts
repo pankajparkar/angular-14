@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { BuiltInPrimitivesDialogComponent } from './components/built-in-primitives-dialog/built-in-primitives-dialog.component';
 import { BuiltInPrimitivesMenuComponent } from './components/built-in-primitives-menu/built-in-primitives-menu.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { ExtendedDiagnosticsComponent } from './components/extended-diagnostics/extended-diagnostics.component';
 import { InjectComponent } from './components/inject/inject.component';
 import { OptionalInjectorComponent } from './components/optional-injector/optional-injector.component';
 import { PageTitleStrategyComponent } from './components/page-title-strategy/page-title-strategy.component';
@@ -41,6 +42,10 @@ const routes: Routes = [
   {
     path: 'optional-injector',
     component: OptionalInjectorComponent,
+  },
+  {
+    path: 'extended-diagnostics',
+    component: ExtendedDiagnosticsComponent,
   },
 ];
 

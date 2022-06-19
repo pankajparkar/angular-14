@@ -1,0 +1,13 @@
+.dashboard-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+
+    a.mat-button {
+        padding: unset;
+        margin: 20px;
+        
+        .mat-card {
+            width: 300px;
+        }
+    }
+}

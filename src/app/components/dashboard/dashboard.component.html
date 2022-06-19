@@ -1,6 +1,11 @@
-<mat-grid-list cols="2" rowHeight="2:1">
-    <mat-grid-tile>1</mat-grid-tile>
-    <mat-grid-tile>2</mat-grid-tile>
-    <mat-grid-tile>3</mat-grid-tile>
-    <mat-grid-tile>4</mat-grid-tile>
-</mat-grid-list>
+<div class="dashboard-wrapper">
+    <ng-container *ngFor="let link of links">
+        <a mat-button [routerLink]="link.path">
+            <mat-card>
+                <mat-card-title>{{ link.name }}</mat-card-title>
+                <!-- TODO: word-wrap -->
+                <mat-card-content>{{ link.subTitle }}</mat-card-content>
+            </mat-card>
+        </a>
+    </ng-container>
+</div>
