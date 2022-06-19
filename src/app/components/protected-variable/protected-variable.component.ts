@@ -1,18 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-protected-variable',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './protected-variable.component.html',
+  template: `
+    <h1>
+      Protected: {{ message }}
+    </h1>
+  `,
   styleUrls: ['./protected-variable.component.scss']
 })
-export class ProtectedVariableComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+export class ProtectedVariableComponent {
+  protected message = 'My Protected Varaible';
 }
