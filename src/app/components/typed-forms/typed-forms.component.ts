@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatButtonModule } from '@angular/material/button';
 
 @Component({
   selector: 'app-typed-forms',
@@ -12,6 +13,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     ReactiveFormsModule,
     MatInputModule,
     MatFormFieldModule,
+    MatButtonModule,
   ],
   templateUrl: './typed-forms.component.html',
   styleUrls: ['./typed-forms.component.scss']
@@ -23,7 +25,7 @@ export class TypedFormsComponent {
     age: new FormControl<number | null>(null),
     address: new FormGroup({
       city: new FormControl<string>(''),
-      state: new FormControl<string>('0'),
+      state: new FormControl<string>(''),
       postalCode: new FormControl<number | null>(null),
     }),
   });

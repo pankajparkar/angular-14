@@ -1,4 +1,4 @@
-<form novalidate (onSubmit)="submit()" [formGroup]="userForm" class="user-form">
+<form novalidate [formGroup]="userForm" class="user-form" (ngSubmit)="submit()">
   <mat-form-field appearance="fill">
     <mat-label>Name</mat-label>
     <input matInput formControlName="name">
@@ -7,17 +7,24 @@
     <mat-label>Age</mat-label>
     <input matInput type="number" formControlName="age">
   </mat-form-field>
-  <mat-form-field appearance="fill">
-    <mat-label>City</mat-label>
-    <input matInput placeholder="Ex. San Francisco">
-  </mat-form-field>
-  <mat-form-field appearance="fill">
-    <mat-label>State</mat-label>
-    <input matInput placeholder="Ex. California">
-  </mat-form-field>
-  <mat-form-field appearance="fill">
-    <mat-label>Postal Code</mat-label>
-    <input matInput #postalCode maxlength="5" placeholder="Ex. 94105" value="94043">
-    <mat-hint align="end">{{postalCode.value.length}} / 5</mat-hint>
-  </mat-form-field>
+  <ng-container formGroupName="address">
+    <mat-form-field appearance="fill">
+      <mat-label>City</mat-label>
+      <input matInput placeholder="Ex. San Francisco" formControlName="city">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>State</mat-label>
+      <input matInput placeholder="Ex. California" formControlName="state">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Postal Code</mat-label>
+      <input matInput #postalCode maxlength="5" placeholder="Ex. 94105" formControlName="postalCode">
+      <mat-hint align="end">{{postalCode.value.length}} / 5</mat-hint>
+    </mat-form-field>
+  </ng-container>
+
+  <button type="submit" mat-button>
+    Submit
+  </button>
+
 </form>
