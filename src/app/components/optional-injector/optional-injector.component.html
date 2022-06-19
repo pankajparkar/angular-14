@@ -1,1 +1,20 @@
-<p>optional-injector works!</p>
+<mat-card>
+    <mat-card-title>
+        Optional Injector Demo
+    </mat-card-title>
+    <mat-card-content>
+        <pre [textContent]="htmlTemplateRef"></pre>
+        <ng-template #template let-user>
+            <div>
+                My name is {{ user.name }}
+            </div>
+        </ng-template>
+        <ng-container #vc></ng-container>
+        <button mat-button (click)="addContentVc()">
+            Add Content
+        </button>
+        <button mat-button (click)="addContentTemplate()">
+            Add Content w/ object
+        </button>
+    </mat-card-content>
+</mat-card>
