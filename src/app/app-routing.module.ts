@@ -36,7 +36,7 @@ const routes: Routes = [
   {
     path: 'cdk-demo',
     component: CdkDemoComponent,
-    title: 'Built In Primitives Menu',
+    title: 'CDK Demo',
   },
   {
     path: 'protected-variable',

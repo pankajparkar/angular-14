@@ -32,8 +32,7 @@ export class DashboardComponent {
     { name: 'Protected Variable', subTitle: 'Now we can use prototected variables in Angular', path: '/protected-variable' },
     { name: 'Extended diagnostics', subTitle: 'Extend angular CLI diagnosting by making changes into angular.json', path: '/extended-diagnostics' },
     { name: 'Optional Injector', subTitle: 'Now injector are optional for embedded views', path: '/optional-injector' },
-    { name: 'Built in Primitives Menu', subTitle: 'Built in primitives for menu', path: '/built-in-primitives-menu' },
-    { name: 'Built in Primitives Dialog', subTitle: 'Built in primitives for dialog', path: '/built-in-primitives-dialog' },
+    { name: 'CDK Demo', subTitle: 'Cdk demo of menu and dialog', path: '/cdk-demo' },
     { name: 'Inject', subTitle: 'New inject API', path: '/inject' },
   ];
 }
