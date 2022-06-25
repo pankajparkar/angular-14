@@ -58,6 +58,10 @@ const routes: Routes = [
     component: ExtendedDiagnosticsComponent,
     title: 'Extended Diagnostics',
   },
+  {
+    path: '**',
+    redirectTo: 'dashboard',
+  }
 ];
 
 @NgModule({
