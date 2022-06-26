@@ -21,21 +21,17 @@ import { MatButtonModule } from '@angular/material/button';
 export class TypedFormsComponent {
 
   userForm = new FormGroup({
-    name: new FormControl<string>(''),
-    age: new FormControl<number | null>(null),
+    name: new FormControl(''),
+    age: new FormControl(''),
     address: new FormGroup({
-      city: new FormControl<string>(''),
-      state: new FormControl<string>(''),
-      postalCode: new FormControl<number | null>(null),
+      city: new FormControl(),
+      state: new FormControl(),
+      postalCode: new FormControl(),
     }),
   });
 
   submit() {
     console.log(this.userForm.value);
-    const { address, age, name } = this.userForm.value
-    // if (address !== undefined) {
-    //   const { city, state, postalCode } = address;
-    // }
   }
 
 }
