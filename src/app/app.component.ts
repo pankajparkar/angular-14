@@ -4,11 +4,11 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
 
 @Component({
   selector: 'app-root',
-  // standalone: true,
-  // imports: [
-  //   RouterModule,
-  //   NavbarComponent,
-  // ],
+  standalone: true,
+  imports: [
+    RouterModule,
+    NavbarComponent,
+  ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })

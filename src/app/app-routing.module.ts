@@ -31,7 +31,7 @@ const routes: Routes = [
   {
     path: 'inject',
     component: InjectComponent,
-    title: 'Inject API',
+    title: DynamicTitleService,
   },
   {
     path: 'cdk-demo',

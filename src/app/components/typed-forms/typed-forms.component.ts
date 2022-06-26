@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
+import { UntypedFormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatButtonModule } from '@angular/material/button';
@@ -21,17 +21,18 @@ import { MatButtonModule } from '@angular/material/button';
 export class TypedFormsComponent {
 
   userForm = new FormGroup({
-    name: new FormControl(''),
-    age: new FormControl(''),
+    name: new UntypedFormControl(''),
+    age: new UntypedFormControl(''),
     address: new FormGroup({
-      city: new FormControl(),
-      state: new FormControl(),
-      postalCode: new FormControl(),
+      city: new UntypedFormControl(),
+      state: new UntypedFormControl(),
+      postalCode: new UntypedFormControl(),
     }),
   });
 
   submit() {
     console.log(this.userForm.value);
+    const { } = this.userForm.value;
   }
 
 }
