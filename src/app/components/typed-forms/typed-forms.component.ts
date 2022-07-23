@@ -11,8 +11,8 @@ interface Address {
   postalCode?: FormControl<string>;
 }
 interface UserForm {
-  name?: FormControl<string>;
-  age?: FormControl<string>;
+  name: FormControl<string>;
+  age: FormControl<string>;
   address?: FormGroup<Address>;
 }
 
